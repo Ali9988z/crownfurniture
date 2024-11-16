@@ -262,7 +262,7 @@ const Section1 = () => {
                 variant="h6"
                 sx={{ fontSize: "20px", lineHeight: "20px" }}
               >
-                <span style={{ color: "red" }}>40% Off </span>
+                <span style={{ color: "black" }}>40% Off </span>
                 Only This Friday And Get Special Gift
               </Typography>
               <Button

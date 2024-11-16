@@ -513,7 +513,7 @@ if (firstName !== "" && Email !== "" && Email.includes("@")) {
 
 
   <Box>
-        <Typography>I agree with Furni Pro's <span style={{textDecoration : "underline" , color : "gray" , cursor : "pointer"}}>Terms Of Service. Privacy Policy</span></Typography>
+        <Typography>I agree with  crown furniture's <span style={{textDecoration : "underline" , color : "gray" , cursor : "pointer"}}>Terms Of Service. Privacy Policy</span></Typography>
   </Box>
 
 <Box sx={{width : {xs :"95%" , md : "80%"} , display : "flex" , justifyContent : "space-between"}}>
