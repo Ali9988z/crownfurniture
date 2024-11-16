@@ -256,14 +256,14 @@ const Section1 = () => {
             </Box>
             <Box sx={{ mx: "25px" }}>
               <Typography sx={{ fontSize: "13px", fontWeight: "600" }}>
-                Latest Offer
+                {/* Latest Offer */}
               </Typography>
               <Typography
                 variant="h6"
                 sx={{ fontSize: "20px", lineHeight: "20px" }}
               >
-                <span style={{ color: "black" }}>40% Off </span>
-                Only This Friday And Get Special Gift
+                <span style={{ color: "black" }}> </span>
+                Sell Your Furniture and get the best price for it.
               </Typography>
               <Button
                 sx={{
@@ -281,7 +281,7 @@ const Section1 = () => {
                   Navigate("");
                 }}
               >
-                Shop Now
+                Sell Now 
               </Button>
             </Box>
           </Box>
