@@ -127,10 +127,12 @@ function ResponsiveAppBar() {
           minHeight: "65px",
           height: { xs: "fit-content", md: "65px" },
           mb: "5px",
-          bgcolor: "#FFFFFF",
+          bgcolor: "black",
+          color: "white",
           padding: { xs: "0 5px", md: "0 70px" },
         }}
       >
+        {/* new css black^ */}
         {/*start view Search List  */}
 
         {data && Search !== "" ?
@@ -146,7 +148,7 @@ function ResponsiveAppBar() {
               }}>
                 <Box sx={{ cursor: "pointer", display: "flex", justifyContent: "space-between", m: "5px" }}>
                   <Box sx={{ width: "25%", height: "80px", bgcolor: "#FFF" }}>
-                    <img style={{ width: "100%", height: "100%" }} src={product.imageLink} loading='lazy' alt="product Photo2" />
+                    <img style={{ width: "80px", height: "80px" }} src={product.imageLink} loading='lazy' alt="product Photo2" />
                   </Box>
 
                   <Box sx={{ width: "50%" }}>
@@ -193,7 +195,7 @@ function ResponsiveAppBar() {
               }}
             >
               <img
-                style={{ width: "100%", Height: "100%" }}
+                style={{ width: "62px", Height: "80px" }}
                 src="../../../Imgs/Logo.png"
                 alt="Furni Pro"
                 loading='lazy'
@@ -209,7 +211,7 @@ function ResponsiveAppBar() {
             {pages.map((page) => (
               <Button
                 key={page.name}
-                sx={{ my: 2, display: "block", color: "black" }}
+                sx={{ my: 2, display: "block", color: "white" }}
                 onClick={() => {
                   navigate(`${page.Link}`);
                 }
@@ -247,18 +249,18 @@ size="large" aria-label="Favorite" color="inherit" >
               {decodedToken ? (
                 <Box
                   sx={{ mx: "5px" }}>
-                  <Button size="large" aria-label="profile" color="inherit" border="2px solid black" >
+                  <Button size="large" aria-label="profile" color="inherit" border="2px solid white" >
                     <AccountCircleOutlinedIcon
                       onClick={() => {
                         navigate("/profile")
                       }}
-                      className="profileIcon" sx={{ fontSize: "30px", color: "black" }} />
+                      className="profileIcon" sx={{ fontSize: "30px", color: "white" }} />
                     <Typography color="black">Hi {decodedToken.firstName}</Typography>
                   </Button>
                 </Box>
               ) : (
                 <Box sx={{ mx: "5px" }}>
-                  <Button size="large" aria-label="profile" color="inherit" border="2px solid black" >
+                  <Button size="large" aria-label="profile" color="inherit" border="2px solid #fff" >
                     <FormDialog />
                   </Button>
                 </Box>
@@ -267,8 +269,8 @@ size="large" aria-label="Favorite" color="inherit" >
 
 
               {decodedToken && <Button onClick={handleSignout} >
-                <LogoutIcon sx={{ color: "#92764E" }} />
-                <Typography sx={{ fontSize: "12px", color: "#92764E" }}>Logout</Typography>
+                <LogoutIcon sx={{ color: "#fff" }} />
+                <Typography sx={{ fontSize: "12px", color: "#fff" }}>Logout</Typography>
               </Button>}
 
 
@@ -284,8 +286,8 @@ size="large" aria-label="Favorite" color="inherit" >
           <Box
             ref={searchbarRef}
             sx={{ width: "300px", position: "absolute", top: "70px", right: "20%", display: { xs: "none", md: "block" } }}>
-            <Box sx={{ display: "flex", alignItems: "flex-end", width: "100%" }}>
-              <TextField sx={{ bgcolor: "#FFF", width: "100%", borderRadius: "20px" }} value={Search} onChange={(e) => {
+            <Box sx={{ display: "flex", alignItems: "flex-end", width: "100%",color: '#fff' }}>
+              <TextField sx={{ bgcolor: "black", width: "100%", borderRadius: "20px" }} value={Search} onChange={(e) => {
                 setSearch(e.target.value);
               }} label="Search" variant="outlined" />
 
@@ -317,7 +319,7 @@ size="large" aria-label="Favorite" color="inherit" >
                 }}
               >
                 <img
-                  style={{ width: "100%", Height: "100%" }}
+                  style={{ width: "80px", Height: "80px" }}
                   src="../../../Imgs/Logo.png"
                   alt="Furni Pro"
                   loading='lazy'

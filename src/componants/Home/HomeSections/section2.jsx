@@ -72,11 +72,11 @@ const section2 = () => {
     
   return (
     <>
-     <Box sx={{ bgcolor: "#FFF", width: {xs :"90%" , md :"75%"}  , margin: '50px auto'}}>
+     <Box sx={{ bgcolor: "#000", width: {xs :"90%" , md :"75%"}  , margin: '50px auto'}}>
         <hr></hr>
         <Box sx={{display : "flex" ,flexWrap : matchDownMd()?'wrap': 'nowrap', justifyContent : "space-around", m: "30px 0" , flexShrink: '0',}}>
           {Shipping.map((step)=>(
-              <Box key={step.title} sx={{ width:{xs: "400px",md: "400px"}, display : "flex"  ,justifyContent : "start" , alignItems : "center"}}>
+              <Box key={step.title} sx={{ width:{xs: "400px",md: "400px"},color: '#fff', display : "flex"  ,justifyContent : "start" , alignItems : "center"}}>
                 <Box sx={{width: "40px", height : "40px",borderRadius: "50%",bgcolor : "#E9E7DB", position :'relative',marginX: '10px'}}>
                     {step.icon}
                 </Box>

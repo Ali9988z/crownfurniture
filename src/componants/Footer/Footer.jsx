@@ -32,8 +32,8 @@ const Footer = () => {
 
   return (
     <>
-    <Subscribe/>
-      <Box sx={{ width: "100%", height: { xs: "500", md: "400px" } }}>
+    {/* <Subscribe/> */}
+      <Box sx={{backgroundColor: "black", width: "100%", height: { xs: "500", md: "400px" } }}>
         <Box
           className="footer"
           sx={{
@@ -95,7 +95,7 @@ const Footer = () => {
             >
               <Box sx={{ width: "100px" , cursor: "pointer" }}>
                 <img
-                  style={{ width: "100%", Height: "100%" }}
+                  style={{ width: "43px", Height: "80px", marginLeft: "30px"}}
                   src="../../../Imgs/Logo.png"
                   alt="Furni Pro"
                   loading='lazy'

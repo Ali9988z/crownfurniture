@@ -49,7 +49,7 @@ function App() {
 <>
 <Box sx={{height : "100vh" , display : "flex" , flexDirection : "column" , justifyContent : "center" , alignItems : "center"}}>
 
-<CircularProgress sx={{color : "#9058a3" , mb : "10px"}} />
+<CircularProgress sx={{color : "rgb(208,121,22)" , mb : "10px"}} />
 
 <Box
                 sx={{ width: "150px", cursor: "pointer" }}>

@@ -1,0 +1,53 @@
+.app-bar {
+    min-height: 65px;
+    height: 65px;
+    margin-bottom: 5px;
+    background-color: black;
+    color: white;
+    padding: 0 70px;
+  }
+  
+  .app-bar-mobile {
+    min-height: fit-content;
+    padding: 0 5px;
+  }
+  
+  .search-box {
+    z-index: 10;
+    width: 300px;
+    background-color: #f3f2ee;
+    height: 300px;
+    overflow-y: scroll;
+    position: absolute;
+    right: 20%;
+    top: 120px;
+  }
+  
+  .search-result {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+  }
+  
+  .product-image {
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+  }
+  
+  .product-info {
+    width: 50%;
+  }
+  
+  .no-products {
+    text-align: center;
+    color: black;
+  }
+  
+  .no-products-icon {
+    font-size: 35px;
+    color: gray;
+    margin-top: 10px;
+  }
+  
