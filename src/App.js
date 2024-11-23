@@ -18,6 +18,7 @@ import { useGetproductByNameQuery } from "./services/productApi";
 import { Box, Typography } from "@mui/material";
 import CircularProgress from '@mui/material/CircularProgress';
 import Profile from "./componants/Profile/Profile";
+import Productcategories from "./componants/Home/HomeSections/Productcategories.jsx";
 
 
 
@@ -83,6 +84,7 @@ function App() {
   <Route path="/Checkout" element={<Check />} />
   <Route path="/fav" element={<Fav />} />
   <Route path="/profile" element={<Profile />} />
+  <Route path="/Productcategories" element={<Productcategories />} />
 
 
 </Routes>

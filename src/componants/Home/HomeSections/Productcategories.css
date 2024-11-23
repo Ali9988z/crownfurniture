@@ -1,0 +1,100 @@
+/* src/App.css */
+.App {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .category {
+    margin-bottom: 40px;
+  }
+  
+  .category h2 {
+    color: #fff;
+    font-size: 23px;
+    margin-bottom: 10px;
+    margin-top: 70px;
+    text-align: center;
+    border-bottom: 2px solid #ccc;
+    display: inline-block;
+    padding: 0 10px;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 50px; /* Gap between boxes */
+    justify-items: center;
+    padding: 20px 0;
+  }
+  
+  .grid-itemcategories {
+    background-color: #f3f3f3;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+    /* Fixed size for boxes */
+    width: 140px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .grid-itemcategories:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .icon {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .name {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .container-category{
+    padding: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: repeat(3, 1fr); /* 3 boxes per row for tablets */
+      gap: 16px;
+    }
+  
+    .grid-itemcategories {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .icon {
+      font-size: 2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr); /* 2 boxes per row for mobile */
+      gap: 12px; /* Smaller gap for mobile view */
+    }
+  
+    .grid-itemcategories {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .icon {
+      font-size: 1.8rem;
+    }
+  
+    .name {
+      font-size: 0.8rem;
+    }
+  }
+  

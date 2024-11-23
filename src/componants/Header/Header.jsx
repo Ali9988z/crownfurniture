@@ -218,7 +218,7 @@ function ResponsiveAppBar() {
               }
               >
                 {page.name}
-                <hr style={{ display: Location.pathname === page.Link ? "block" : "none" }} />
+                
               </Button>
             ))}
           </Box>
@@ -331,7 +331,7 @@ size="large" aria-label="Favorite" color="inherit" >
             <Box sx={{ display: { xs: "flex", md: "none" } }}>
               {decodedToken ? (
                 <Box sx={{ mx: "5px" }}>
-                  <Button size="large" aria-label="profile" color="inherit" border="2px solid black" >
+                  <Button size="large" aria-label="profile" color="inherit"  >
                     <AccountCircleOutlinedIcon
                       onClick={() => { navigate("/profile") }}
                       className="profileIcon" sx={{ fontSize: "30px", color: "black" }} />

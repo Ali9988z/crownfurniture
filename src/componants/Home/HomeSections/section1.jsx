@@ -39,11 +39,16 @@ const Section1 = () => {
   const Navigate = useNavigate();
 
   return (
-    <Box sx={{ bgcolor: "black", }}>
-      <Box sx={{ padding: "16px", paddingBottom: "0px", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: { xs: "column", md: "row" } }}>
+
+    <Box sx={{ bgcolor: "black", }}
+      className="container">
+
+      <Box sx={{ padding: "16px", paddingBottom: "0px", display: "flex", justifyContent: "center", flexDirection: { xs: "column", md: "row" } }}
+      >
 
 
-        <Box sx={{ width: { xs: "90%", md: "50%" }, mb: "20px", height: "auto", mr: { md: "20px" } }}
+
+        <Box sx={{ width: { xs: "100%", md: "50%" }, mb: "20px", height: "auto", mr: { md: "20px" } }}
         >
           <Carousel autoPlay={true} interval={3000} infiniteLoop={true} showThumbs={false}>
             {ItemData1.map((item) => (
@@ -69,7 +74,7 @@ const Section1 = () => {
                     ml: { xs: "15px", md: "30px" },
                     pl: "20px",
                     width: { xs: "80%", md: "50%" },
-                    height: { xs: "fit-content", md: "80%" },
+                    minHeight: { xs: "100px", md: "400px" },
                     display: "flex",
                     flexDirection: "column",
                     alignItems: "start",
@@ -124,112 +129,37 @@ const Section1 = () => {
 
 
 
-
-
-        <Box
-  sx={{
-    backgroundColor: "rgb(238,134,16)", // Orange color matching your image
-    borderRadius: "10px",
-    padding: "20px",
-    textAlign: "center",
-    width: { xs: "90%",  },
-    margin: "20px auto",
-    boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)", // Subtle shadow effect
-  }}
->
-  {/* Title */}
-  <Typography
-    variant="h6"
-    sx={{
-      fontWeight: "bold",
-      color: "#fff",
-      fontSize: "20px",
-      marginBottom: "15px",
-    }}
-  >
-    Sell your recyclables online with UIF!
-  </Typography>
-
-  {/* Description */}
-  <Typography
-    sx={{
-      color: "#fff",
-      fontSize: "14px",
-      lineHeight: "1.5",
-      marginBottom: "20px",
-    }}
-  >
-    Make a difference and earn money with UIF. <br /> Sell your recyclables
-    online, hassle-free. <br />
+        <div className="container-sell">
+  <h1 className="heading">Sell your recyclables online with UIF!</h1>
+  <p className="description">
+    Make a difference and earn money with UIF. Sell your recyclables online, hassle-free.
     Join the sustainable revolution now!
-  </Typography>
+  </p>
 
-  {/* Schedule a Pickup Label */}
-  <Typography
-    sx={{
-      color: "#fff",
-      fontSize: "16px",
-      fontWeight: "500",
-      marginBottom: "10px",
-    }}
-  >
-    Schedule a pickup?
-  </Typography>
+  <h3 className="subheading">Schedule a pickup?</h3>
 
-  {/* Input Box with Button */}
-  <Box
-    sx={{
-      display: "flex",
-      alignItems: "center",
-      justifyContent: "center",
-      backgroundColor: "#fff",
-      borderRadius: "20px",
-      padding: "5px",
-      width: "100%",
-      maxWidth: "300px",
-      margin: "0 auto 20px",
-    }}
-  >
+  <div className="form-container">
     <input
       type="text"
+      id="phone"
       placeholder="+91"
-      style={{
-        border: "none",
-        outline: "none",
-        padding: "10px",
-        fontSize: "16px",
-        flex: 1,
-        borderRadius: "10px",
-      }}
+      className="input"
     />
-    <button
-      style={{
-        backgroundColor: "#FFC107",
-        border: "none",
-        padding: "11px 19px 9px",
-        marginLeft: "10px",
-        borderRadius: "10px",
-        fontSize: "14px",
-        cursor: "pointer",
-        color: "#000",
-        fontWeight: "bold",
-      }}
-    >
-      Book
-    </button>
-  </Box>
+    <button className="button">Book</button>
+  </div>
 
-  {/* Contact Section */}
-  <Typography sx={{ color: "#fff", fontSize: "14px" }}>
+  {/* Customer Support Section */}
+  <p className="support">
     Any issues? Call us at{" "}
-    <a
-      href="tel:+919876543210"
-      style={{ color: "#fff", textDecoration: "underline" }}
-    >
-      +91 98765 43210
+    <a href="tel:+919576543210" className="support-link">
+      +919576543210
     </a>
-  </Typography>
-</Box>
+  </p>
+</div>
+
+
+
+
 
 
 
@@ -316,10 +246,10 @@ const Section1 = () => {
           justifyContent: "center",
           width: "100%",
         }}
-      >
+        className="container">
         <Box
           sx={{
-            width: { xs: "90%", md: "75%" },
+            width: { xs: "90%", md: "100%" },
             paddingBottom: "0px",
             display: { xs: "block", md: "flex" },
             mt: "16px"
@@ -335,7 +265,7 @@ const Section1 = () => {
               borderTopLeftRadius: "15px",
               borderTopRightRadius: "15px",
               display: "flex",
-              width: { xs: "85%", md: "45%" },
+              width: { xs: "100%", md: "45%" },
               ml: "12px",
               mx: matchDownMd() ? "auto" : null,
               mb: matchDownMd() ? "10px" : null
@@ -403,24 +333,24 @@ const Section1 = () => {
 
 
           <Box sx={{
-            display: "flex", justifyContent: "space-around", width: { xs: "70%", md: "55%" }
+            display: "flex", justifyContent: "space-around", width: { xs: "100%", md: "55%" }
             , mx: matchDownMd() ? "auto" : null,
             mb: matchDownMd() ? "10px" : null
 
-          }}>
-            <Box sx={{ width: "30%", height: "100%", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
+          }} className="container">
+            <Box sx={{ width: "30%", height: "100%", display: "flex", flexDirection: "column", justifyContent: "center", }}>
               <Typography className="outline-text" fontSize={matchDownMd() ? "25px" : "40px"} >975+</Typography>
               <Typography color="gray">Home furniture</Typography>
             </Box>
 
 
-            <Box sx={{ width: "30%", height: "100%", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
+            <Box sx={{ width: "30%", height: "100%", display: "flex", flexDirection: "column", justifyContent: "center",}}>
               <Typography className="outline-text" fontSize={matchDownMd() ? "25px" : "40px"} >320+</Typography>
               <Typography color="gray">interior Designs</Typography>
             </Box>
 
 
-            <Box sx={{ width: "30%", height: "100%", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
+            <Box sx={{ width: "30%", height: "100%", display: "flex", flexDirection: "column", justifyContent: "center", }}>
               <Typography className="outline-text" fontSize={matchDownMd() ? "25px" : "40px"} >980+</Typography>
               <Typography color="gray">Happy Clients</Typography>
             </Box>

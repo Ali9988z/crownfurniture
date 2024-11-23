@@ -1,82 +1,141 @@
-.UIFcontainer {
-    border: 1px solid #fff;
-    text-align: center;
-    max-width: 400px;
+.container-sell {
+    background-color: rgb(229, 143, 14);
+    max-height: 420px;
+    border-radius: 15px;
     padding: 20px;
-    background:rgb(208,121,22);
-    border-radius: 10px;
-    height: 383px;
-  }
-  .col-md-6{
-    height: 440px;
-  }
-  
-  h1 {
-    color: #fff;
-    font-size: 1.8rem;
-    margin-bottom: 27px;
-  }
-  
-  p {
-    color: #fff;
-    font-size: 1rem;
-    line-height: 1.5;
-    margin: 10px 0;
-  }
-  
-  .pickup-form {
-    margin-top: 20px;
-  }
-  
-  label {
-    color: #fff;
-    font-size: 1.1rem;
-    font-weight: bold;
-  }
-  
-  .form-group {
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     display: flex;
-    margin-top: 6rem;
-  }
-  
-  input {
-    flex: 1;
-    padding: 10px;
-    border: none;
-    border-radius: 5px 0 0 5px;
-    outline: none;
-  }
-  
-  .book-btn {
-    background-color:rgb(239,192,60);
-    color: #000;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;
-    font-size: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.heading {
+    color: #fff;
+    font-weight: 500;
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.description {
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.subheading {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.form-container {
     display: flex;
     align-items: center;
-  }
-  
-  .book-btn span {
-    margin-right: 5px;
-  }
-  
-  .book-btn:hover {
-    background-color:rgb(239,192,60);
-  }
-  
-  .issues {
-    margin-top: 20px;
-    font-size: 0.9rem;
-  }
-  
-  .issues a {
-    color:#fff;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    margin: 0 auto 20px;
+    box-sizing: border-box;
+    gap: 10px;
+}
+
+.input {
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    flex: 1;
+    min-width: 0;
+}
+
+.button {
+    background-color: rgb(254, 203, 1);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: rgb(229, 183, 0);
+}
+
+.support {
+    font-size: 14px;
+    color: #fff;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.support-link {
+    color: #fff;
     text-decoration: none;
-  }
-  
-  .issues a:hover {
+    font-weight: bold;
+}
+
+.support-link:hover {
     text-decoration: underline;
-  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .heading {
+        font-size: 28px;
+    }
+
+    .description {
+        font-size: 13px;
+    }
+
+    .subheading {
+        font-size: 20px;
+    }
+
+    .form-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .input,
+    .button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .heading {
+        font-size: 20px;
+    }
+
+    .description {
+        font-size: 12px;
+    }
+
+    .subheading {
+        font-size: 18px;
+        margin-bottom: 1rem;
+    }
+
+    .form-container {
+        padding: 8px;
+    }
+
+    .support {
+        font-size: 12px;
+    }
+
+    .support-link {
+        font-size: 13px;
+    }
+}
