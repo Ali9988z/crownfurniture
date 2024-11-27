@@ -22,7 +22,7 @@
   .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 50px; /* Gap between boxes */
+    gap: 20px;
     justify-items: center;
     padding: 20px 0;
   }
@@ -35,7 +35,7 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   
-    /* Fixed size for boxes */
+ 
     width: 140px;
     height: 140px;
     display: flex;
@@ -85,7 +85,7 @@
     }
   
     .grid-itemcategories {
-      width: 100px;
+      width: -webkit-fill-available;
       height: 100px;
     }
   

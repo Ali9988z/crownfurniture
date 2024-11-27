@@ -1,0 +1,9 @@
+.custom-select {
+    height: 47px;
+   
+}
+
+.custom-select option {
+    background-color: black;
+    color: white;
+}
