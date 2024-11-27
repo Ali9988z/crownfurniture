@@ -319,7 +319,7 @@ const Section1 = () => {
                   ":hover": { color: "#FCC012", outline: "1px solid #FCC012" },
                 }}
                 onClick={() => {
-                  Navigate("");
+                  Navigate("/SellFurniture");
                 }}
               >
                 Sell Now
