@@ -1,0 +1,260 @@
+.testimonials-wrap {
+    padding: 40px 0;
+    background-color: #000;
+  }
+  
+  .heading-section {
+    text-align: center;
+    color: #fff;
+  }
+  
+  .sub-heading {
+    font-family: "Lato", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #C67605;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .heading-section h2 {
+    font-size: 28px;
+    font-weight: 600;
+    padding-top: 10px;
+    padding-bottom: 15px;
+  }
+  
+  .testimonial-box {
+    display: block;
+    position: relative;
+    padding: 30px 20px;
+    background: #222;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  .user-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .text .quote {
+    position: absolute;
+    top: -23px;
+    color: #2e9da1;
+    font-size: 27px;
+  }
+  
+  .testimonial-name {
+    margin-bottom: 0;
+    line-height: 14px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #fff;
+  }
+  
+  .position {
+    color: #adadad;
+    font-size: 14px;
+  }
+  
+  .slick-slide {
+    padding: 0 10px; /* 10px gap on left and right */
+  }
+  
+  .slick-list {
+    margin: 0 -10px; /* Counteracts the padding for alignment */
+  }
+  
+  .text {
+    margin-left: 20px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 1024px) { /* Tablets and smaller laptops */
+    .heading-section h2 {
+      font-size: 24px;
+    }
+  
+    .testimonial-box {
+      padding: 20px 15px;
+    }
+  
+    .user-img {
+      width: 70px;
+      height: 70px;
+    }
+  
+    .text .quote {
+      font-size: 24px;
+      top: -18px;
+    }
+  
+    .testimonial-name {
+      font-size: 15px;
+    }
+  
+    .position {
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 768px) { /* Tablets and large phones */
+    .testimonials-wrap {
+      padding: 30px 0;
+    }
+  
+    .heading-section h2 {
+      font-size: 22px;
+    }
+  
+    .testimonial-box {
+      padding: 20px 10px;
+    }
+  
+    .user-img {
+      width: 60px;
+      height: 60px;
+    }
+  
+    .text {
+      margin-left: 15px;
+    }
+  
+    .text .quote {
+      font-size: 20px;
+      top: -15px;
+    }
+  
+    .testimonial-name {
+      font-size: 14px;
+    }
+  
+    .position {
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 480px) { /* Mobile devices */
+    .heading-section {
+      text-align: center;
+      padding: 0 10px;
+    }
+  
+    .heading-section h2 {
+      font-size: 18px;
+    }
+  
+    .testimonial-box {
+      padding: 15px 10px;
+    }
+  
+    .user-img {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .text {
+      margin-left: 10px;
+    }
+  
+    .text .quote {
+      font-size: 18px;
+      top: -12px;
+    }
+  
+    .testimonial-name {
+      font-size: 13px;
+    }
+  
+    .position {
+      font-size: 11px;
+    }
+  
+    /* Slick Slider Adjustments */
+    .slick-slide {
+      padding: 0 5px;
+    }
+  
+    .slick-list {
+      margin: 0 6px;
+    }
+  }
+  /* Styling for Slick Slider Arrows */
+.slick-prev,
+.slick-next {
+  background-color: rgba(0, 0, 0, 0.5);  /* Dark background for better visibility */
+  
+  border-radius: 50%;  /* Circular arrow buttons */
+  z-index: 1;  /* Ensure the arrows are above the content */
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  transition: all 0.3s ease-in-out;
+}
+
+.slick-prev {
+  left: -50px;  /* Position the left arrow */
+}
+
+.slick-next {
+  right: -50px;  /* Position the right arrow */
+}
+
+.slick-prev:before,
+.slick-next:before {
+  content: "←";  /* Use arrow characters */
+  font-size: 20px;
+  color: white;
+}
+
+.slick-next:before {
+  content: "→";  /* Right arrow character */
+}
+
+/* Mobile View Adjustments */
+@media (max-width: 768px) { /* Tablets and large phones */
+  .slick-prev,
+  .slick-next {
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
+  }
+
+  .slick-prev {
+    left: -33px;  /* Slightly bring the left arrow inside */
+  }
+
+  .slick-next {
+    right: -33px;  /* Slightly bring the right arrow inside */
+  }
+}
+
+@media (max-width: 480px) { /* Mobile devices */
+  .slick-prev,
+  .slick-next {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+  }
+
+  .slick-prev {
+    left: -9px;  /* Further adjust for mobile */
+  }
+
+  .slick-next {
+    right: -9px;  /* Further adjust for mobile */
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 18px; /* Make the arrows smaller */
+  }
+}

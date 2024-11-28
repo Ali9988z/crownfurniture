@@ -9,6 +9,7 @@ import ScrollToTop from '../../ExternalMethods/ScrollToTop';
 import BlogsSection from '../Blog/BlogsSection;';
 import { Helmet } from 'react-helmet';
 import Productcategories from './HomeSections/Productcategories';
+import Testimonials from './HomeSections/Testimonials';
 
 const Home = () =>{
 
@@ -21,6 +22,7 @@ const Home = () =>{
      {/* <ScrollToTop/> */}
     <Section1/>
     <Productcategories />
+    <Testimonials />
     <Section2/>
     {/* <Productsection/> */}
     {/* <Section5/> */}

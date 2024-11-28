@@ -1,5 +1,5 @@
 .container-sell {
-    background-color: rgb(229, 143, 14);
+    background-color:#C67605;
     max-height: 420px;
     border-radius: 15px;
     padding: 20px;
@@ -57,7 +57,7 @@
 }
 
 .button {
-    background-color: rgb(254, 203, 1);
+    background-color:#FCC012;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -65,10 +65,11 @@
     cursor: pointer;
     flex-shrink: 0;
     transition: background-color 0.3s ease;
+    color: #fff;
 }
 
 .button:hover {
-    background-color: rgb(229, 183, 0);
+    background-color: #FCC012;
 }
 
 .support {
