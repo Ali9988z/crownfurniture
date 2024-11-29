@@ -51,7 +51,7 @@ const HowItWorksAndWhyUs = () => {
       {/* How It Works Section */}
       <section className="how-it-works">
         <h2>How it works</h2>
-        <div className="steps-container">
+        <div className="steps">
           {steps.map((step, index) => (
             <div className="step-card" key={index}>
               <img src={step.imgSrc} alt={step.title} className="step-icon" />
