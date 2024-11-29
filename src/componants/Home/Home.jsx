@@ -10,26 +10,29 @@ import BlogsSection from '../Blog/BlogsSection;';
 import { Helmet } from 'react-helmet';
 import Productcategories from './HomeSections/Productcategories';
 import Testimonials from './HomeSections/Testimonials';
+import HowItWorksAndWhyUs from './HomeSections/HowItWorksAndWhyUs';
 
-const Home = () =>{
+
+const Home = () => {
 
   return (
- <>
- {/* <Helmet>
+    <>
+      {/* <Helmet>
       <meta charSet="utf-8" />
       <title>Home-FurniPro</title>
     </Helmet> */}
-     {/* <ScrollToTop/> */}
-    <Section1/>
-    <Productcategories />
-    <Testimonials />
-    <Section2/>
-    {/* <Productsection/> */}
-    {/* <Section5/> */}
-    {/* <CategorySection/> */}
-    {/* <AllProductsSection /> */}
-    {/* <BlogsSection/> */}
- </>
+      {/* <ScrollToTop/> */}
+      <Section1 />
+      <Productcategories />
+      <Testimonials />
+      <HowItWorksAndWhyUs />
+      <Section2 />
+      {/* <Productsection/> */}
+      {/* <Section5/> */}
+      {/* <CategorySection/> */}
+      {/* <AllProductsSection /> */}
+      {/* <BlogsSection/> */}
+    </>
 
 
   );
