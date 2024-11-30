@@ -29,6 +29,7 @@ const pages = [
   { name: "Shop", Link: "" },
   { name: "Blog", Link: "" },
   { name: "Contact", Link: "" },
+  { name: "Scrap Rates", Link: "/scraprates" },
 ];
 
 function ResponsiveAppBar() {
@@ -215,16 +216,16 @@ function ResponsiveAppBar() {
                 onClick={() => {
                   navigate(`${page.Link}`);
                 }
-              }
+                }
               >
                 {page.name}
-                
+
               </Button>
             ))}
           </Box>
           {/* _____|||||||||| */}
           <Box sx={{ display: "flex" }}>
-            <Box sx={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+            <Box sx={{ display: "flex", alignItems: "center", justifyContent: "space-between", }}>
               {/* <IconButton 
   ref={searchIconRef}
 onClick={() => {setShowSearch(true)}}
@@ -249,7 +250,7 @@ size="large" aria-label="Favorite" color="inherit" >
               {decodedToken ? (
                 <Box
                   sx={{ mx: "5px" }}>
-                  <Button size="large" aria-label="profile" color="inherit" border="2px solid white" >
+                  <Button size="large" aria-label="profile" color="white" border="2px solid white" >
                     <AccountCircleOutlinedIcon
                       onClick={() => {
                         navigate("/profile")
@@ -259,8 +260,8 @@ size="large" aria-label="Favorite" color="inherit" >
                   </Button>
                 </Box>
               ) : (
-                <Box sx={{ mx: "5px" }}>
-                  <Button size="large" aria-label="profile" color="inherit" border="2px solid #fff" >
+                <Box sx={{ mx: "5px", color: "#fff" }}>
+                  <Button size="large" aria-label="profile" border="2px solid #fff" >
                     <FormDialog />
                   </Button>
                 </Box>
@@ -286,8 +287,8 @@ size="large" aria-label="Favorite" color="inherit" >
           <Box
             ref={searchbarRef}
             sx={{ width: "300px", position: "absolute", top: "70px", right: "20%", display: { xs: "none", md: "block" } }}>
-            <Box sx={{ display: "flex", alignItems: "flex-end", width: "100%",color: '#fff' }}>
-              <TextField sx={{ bgcolor: "black", width: "100%", borderRadius: "20px" }} value={Search} onChange={(e) => {
+            <Box sx={{ display: "flex", alignItems: "flex-end", width: "100%", color: '#fff' }}>
+              <TextField sx={{ bgcolor: "#fff", width: "100%", borderRadius: "20px" }} value={Search} onChange={(e) => {
                 setSearch(e.target.value);
               }} label="Search" variant="outlined" />
 
@@ -308,7 +309,7 @@ size="large" aria-label="Favorite" color="inherit" >
             display: { xs: "block", md: "none" },
           }}
         >
-          <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+          <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", color: "#fff" }}>
             <Toolbar disableGutters>
               <Box
                 sx={{ width: "80px", cursor: "pointer" }}
@@ -334,13 +335,13 @@ size="large" aria-label="Favorite" color="inherit" >
                   <Button size="large" aria-label="profile" color="inherit"  >
                     <AccountCircleOutlinedIcon
                       onClick={() => { navigate("/profile") }}
-                      className="profileIcon" sx={{ fontSize: "30px", color: "black" }} />
+                      className="profileIcon" sx={{ fontSize: "30px", color: "#fff" }} />
                     <Typography color="black">Hi {decodedToken.firstName}</Typography>
                   </Button>
                 </Box>
               ) : (
                 <Box sx={{ mx: "5px" }}>
-                  <Button size="large" aria-label="profile" color="inherit" border="2px solid black" >
+                  <Button size="large" aria-label="profile" color="inherit" border="2px solid white" >
                     <FormDialog />
                   </Button>
                 </Box>
@@ -351,12 +352,13 @@ size="large" aria-label="Favorite" color="inherit" >
               {/* For shown and hide up and down buttons */}
 
               <IconButton
-                onClick={
-                  () => {
-                    setarrowview(arrowview ? false : true)
-                    setviewlist(viewlist ? false : true)
-                  }
-                }
+                onClick={() => {
+                  setarrowview(arrowview ? false : true);
+                  setviewlist(viewlist ? false : true);
+                }}
+                sx={{
+                  color: "white", // Set the icon color to white
+                }}
               >
                 <MenuIcon />
               </IconButton>
@@ -400,6 +402,7 @@ size="large" aria-label="Favorite" color="inherit" >
                   display: { xs: "flex", md: "none" },
                   justifyContent: "center",
                   height: "60px",
+                  color: "#fff"
                 }}
               >
                 {/* <IconButton
@@ -435,8 +438,8 @@ size="large" aria-label="Favorite" color="inherit" >
 
 
                 {decodedToken && <Button onClick={handleSignout} >
-                  <LogoutIcon sx={{ color: "#92764E" }} />
-                  <Typography sx={{ fontSize: "12px", color: "#92764E" }}>Logout</Typography>
+                  <LogoutIcon sx={{ color: "#fff" }} />
+                  <Typography sx={{ fontSize: "12px", color: "#fff" }}>Logout</Typography>
                 </Button>}
 
               </Box>
@@ -446,14 +449,25 @@ size="large" aria-label="Favorite" color="inherit" >
                   height: "fit-content",
                   left: "0",
                   top: "110px",
+
                 }}
               >
                 <Box
                   sx={{
-                    color: "black",
+                    color: "#fff",
                     mb: "10px",
                     display: "flex",
-                    justifyContent: "center",
+                    justifyContent: {
+                      xs: "flex-start",
+                      sm: "center",
+                    },
+                    flexDirection: {
+                      xs: "column",
+                      sm: "row",
+                    },
+                    alignItems: "",
+                    height: "auto",
+                    padding: "10px",
                   }}
                 >
                   {pages.map((page) => (
@@ -462,7 +476,7 @@ size="large" aria-label="Favorite" color="inherit" >
                       sx={{
                         my: 2,
                         display: "block",
-                        color: "black",
+                        color: "#fff",
                       }}
                       onClick={() => {
                         navigate(`${page.Link}`);
@@ -471,7 +485,7 @@ size="large" aria-label="Favorite" color="inherit" >
                       }}
                     >
                       {page.name}
-                      <hr style={{ display: Location.pathname === page.Link ? "block" : "none" }} />
+                      {/* <hr style={{ display: Location.pathname === page.Link ? "block" : "none" }} /> */}
                     </Button>
                   ))}
                 </Box>

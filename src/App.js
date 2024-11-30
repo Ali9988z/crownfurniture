@@ -20,6 +20,7 @@ import CircularProgress from '@mui/material/CircularProgress';
 import Profile from "./componants/Profile/Profile";
 import Productcategories from "./componants/Home/HomeSections/Productcategories.jsx";
 import SellFurnitureForm from "./componants/Form/SellFurniture.jsx";
+import ScrapRates from "./componants/Home/ScrapRates.jsx";
 
 
 
@@ -87,6 +88,7 @@ function App() {
   <Route path="/profile" element={<Profile />} />
   <Route path="/Productcategories" element={<Productcategories />} />
   <Route path="/SellFurniture" element={<SellFurnitureForm />} />
+  <Route path="/scraprates" element={<ScrapRates />} />
 
 </Routes>
 <Notifiction/>

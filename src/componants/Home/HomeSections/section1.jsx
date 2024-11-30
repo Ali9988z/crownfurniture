@@ -265,7 +265,7 @@ const Section1 = () => {
               borderTopLeftRadius: "15px",
               borderTopRightRadius: "15px",
               display: "flex",
-              width: { xs: "100%", md: "45%" },
+              width: { xs: "100%", md: "50%" },
               ml: "12px",
               mx: matchDownMd() ? "auto" : null,
               mb: matchDownMd() ? "10px" : null
@@ -328,11 +328,80 @@ const Section1 = () => {
           </Box>
 
 
+{/* new section scrap rates start */}
+           <Box
+            sx={{
+              bgcolor: "black",
+              color: "#fff",
+              border: "1px solid #fff",
+              padding: "15px",
+              borderTopLeftRadius: "15px",
+              borderTopRightRadius: "15px",
+              display: "flex",
+              width: { xs: "100%", md: "50%" },
+              ml: "12px",
+              mx: matchDownMd() ? "auto" : null,
+              mb: matchDownMd() ? "10px" : null
+            }}
+          >
+            <Box
+              sx={{
+                bgcolor: "#F3F2EE",
+                width: "100px",
+                height: "100px",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                borderRadius: "15px",
+              }}
+            >
+              <Box sx={{ width: "50px", height: "70px" }}>
+                <img
+                  src="../../../../Imgs/rupee.png"
+                  style={{
+                    borderRadius: "15px",
+                    widht: "100%",
+                    height: "100%",
+                  }}
+                  alt="product"
+                  loading='lazy'
+                />
+              </Box>
+            </Box>
+            <Box sx={{ mx: "25px" }}>
+              <Typography sx={{ fontSize: "13px", fontWeight: "600" }}>
+                {/* Latest Offer */}
+              </Typography>
+              <Typography
+                variant="h6"
+                sx={{ fontSize: "20px", lineHeight: "20px" }}
+              >
+                <span style={{ color: "black" }}> </span>
+                Check our complete scrap rate list
+              </Typography>
+              <Button
+                sx={{
+                  fontSize: matchDownMd() ? "10px" : "12px",
+                  mt: "8px",
+                  backgroundColor: "#AC8C5B",
+                  fontWeight: "200",
+                  cursor: "pointer",
+                  color: "#FFF",
+                  padding: "5px 20px",
+                  borderRadius: "20px",
+                  ":hover": { color: "#FCC012", outline: "1px solid #FCC012" },
+                }}
+                onClick={() => {
+                  Navigate("/scraprates");
+                }}
+              >
+                Scrap Rates
+              </Button>
+            </Box>
+          </Box>
 
 
-
-
-          <Box sx={{
+          {/* <Box sx={{
             display: "flex", justifyContent: "space-around", width: { xs: "100%", md: "55%" }
             , mx: matchDownMd() ? "auto" : null,
             mb: matchDownMd() ? "10px" : null
@@ -357,7 +426,7 @@ const Section1 = () => {
 
 
 
-          </Box>
+          </Box> */}
 
 
 
